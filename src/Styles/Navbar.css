@@ -1,0 +1,35 @@
+div {
+    background-color: 046582;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#046582;
+    position: sticky;
+    top: 0;
+  }
+
+  img {
+      width: 2rem;
+  }
+  
+  
+  li {
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li button:hover {
+    background-color: #046582;
+  }

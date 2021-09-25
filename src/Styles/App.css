@@ -1,0 +1,49 @@
+.App{
+  text-align:center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.container{
+  background-color:lightblue;
+  width:30%;
+  margin:1rem auto;
+  padding: 2rem;
+}
+
+.formStyle{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formStyle label,button{
+ 
+ font-size: large;
+}
+
+.formStyle input{
+  font-size: large;
+  margin-bottom: 2rem;
+}
+.errorStyle{
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  color:red
+}
+.labelStyle{
+  margin-top: 1rem;
+}
+
+.buttonStyle{
+  margin-top: 1rem;
+  width:10%; 
+}
+
+.userlisttable{
+margin-top: 5rem;
+}

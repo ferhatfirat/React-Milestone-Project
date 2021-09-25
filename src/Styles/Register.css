@@ -1,0 +1,10 @@
+.register {
+    align-items: center;
+    text-align: center;
+    width: 25%;
+    color: white;
+    justify-content: center;
+    background-color: #1976D2;
+    border-radius: 1rem;
+
+}
