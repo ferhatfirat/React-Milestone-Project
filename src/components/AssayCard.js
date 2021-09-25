@@ -9,8 +9,19 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import ShareIcon from "@mui/icons-material/Share";
+import MoreIcon from '@mui/icons-material/More';
+import { useHistory } from "react-router-dom";
+import { AuthContext } from "../context/AuthContext";
+import { AppContext } from "../context/Context";
+import { useContext, useState } from 'react';
 
 const AssayCard = ({ item }) => {
+  const history = useHistory();
+  const deger = useContext(AppContext);
+
+  const [info, setInfo] = useState(deger);
+  const { currentUser } = useContext(AuthContext);
+
   return (
     <Card sx={{ maxHeight: 445 }}>
       <CardHeader
@@ -42,6 +53,9 @@ const AssayCard = ({ item }) => {
         <IconButton aria-label="share">
           <ShareIcon />
         </IconButton>
+        <IconButton aria-label="more"  onClick={currentUser ? () => {history.push("/detail")} : () => {history.push("/register")}} >
+         <MoreIcon/>
+         </IconButton>
       </CardActions>
     </Card>
   );

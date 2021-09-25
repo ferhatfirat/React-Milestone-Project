@@ -6,6 +6,7 @@ import { AppContext } from "../context/Context";
 import { deleteHandler, useFetch } from "../auth/functions";
 import AssayCard from "../components/AssayCard";
 import { Container, Grid } from "@mui/material";
+import { useHistory } from "react-router-dom";
 
 const Home = () => {
   const deger = useContext(AppContext);
@@ -15,6 +16,7 @@ const Home = () => {
     setInfo({ ...item });
   };
   const { blogList, isLoading } = useFetch();
+  const history = useHistory();
 
   return (
     <Container sx={{mb:10}}>

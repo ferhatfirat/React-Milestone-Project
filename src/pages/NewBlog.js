@@ -34,15 +34,6 @@ const NewBlog = () => {
   };
 
 
-
-  // console.log(CreationDate);
-  // console.log(typeof CreationDate);
-  // console.log(UserEmail);
-  // console.log(typeof UserEmail);
-  // console.log(deger);
-  // console.log(info);
-  // console.log(info.CreateDate);
-
   <h2 className="register-header">Register</h2>;
 
   return (
